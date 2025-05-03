@@ -133,4 +133,6 @@ app.get("/keep-warm", async (req, res) => {
   res.json({message: 'server is active'})
 });
 
-app.listen(process.env.PORT, () => console.log("Server running on port 5001"));
+app.listen(process.env.PORT || 5001, () => {
+  console.log(`Server running on port ${process.env.PORT || 5001}`);
+});
