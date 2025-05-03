@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Code</title>
+    <style>
+        @font-face{
+          font-family: 'Boska-Light';
+          src: url('./Boska-Light.woff');
+        }
+        @font-face{
+          font-family: 'Poppins-Light';
+          src: url('./Poppins-Light.woff');
+        }
+        h1{
+          font-family: 'Boska-Light';
+          font-size: 50px;
+          font-weight: 100;
+        }
+        body {
+            font-family: 'Poppins-Light';
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    
+        .container {
+            background-color: #fff;
+            max-width: 400px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .otp-box {
+            background-color: #f4f4f4;
+            display: inline-block;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #777;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Your OTP Code</div>
+        <h1>Nasara</h1>
+        <p>Hello,</p>
+        <p>Your One-Time Password (OTP) for account verification is:</p>
+        <div class="otp-box">{{OTP}}</div>
+        <p>This OTP is valid for <strong>5 minutes</strong>. Please do not share this code with anyone.</p>
+        <p>If you didn’t request this code, please ignore this email.</p>
+        <p>Thank you for using our service!</p>
+        <div class="footer">Aziz Ansari © 2025 Nasara. All rights reserved.</div>
+    </div>
+</body>
+</html>
